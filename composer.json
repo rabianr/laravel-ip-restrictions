@@ -1,0 +1,35 @@
+{
+    "name": "rabianr/laravel-ip-restrictions",
+    "description": "Ip restrictions Middleware for Laravel",
+    "authors": [
+        {
+            "name": "ラ・ビ・アン・ローズ"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": "^6|^7|^8|^9",
+        "illuminate/contracts": "^6|^7|^8|^9",
+        "symfony/http-foundation": "^4|^5",
+        "symfony/http-kernel": "^4|^5"
+    },
+    "require-dev": {
+        "laravel/framework": "^6|^7|^8",
+        "phpunit/phpunit": "^6|^7|^8|^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rabianr\\Access\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "Rabianr\\Access\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
