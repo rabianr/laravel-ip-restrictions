@@ -27,7 +27,7 @@ class HandleIpRestrictions
      */
     public function handle($request, Closure $next)
     {
-        if ($this->whitelist->isNotEmpty() && ! $this->whitelist->contains($request->ip())) {
+        if (! $this->whitelist->contains($request->ip())) {
             throw new AccessDeniedHttpException;
         }
 
