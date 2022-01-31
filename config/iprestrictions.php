@@ -12,6 +12,10 @@ return [
     |
     | IPRESTRICTIONS_WHITELIST=1.1.1.1,1.1.1.2
     |
+    | Asterisk (*) can also be used to allow any ip addresses.
+    |
+    | IPRESTRICTIONS_WHITELIST=*
+    |
     | Values set in ".env" file will be merged to the value in this file.
     |
     */
